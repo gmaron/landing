@@ -173,7 +173,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/coding_background.gif");
+  background-image: url("https://gmaron-statics-files.s3.amazonaws.com/img/coding_background.gif");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
