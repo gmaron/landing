@@ -1,2 +1,11 @@
 .DS_Store
 .vs_code/
+.idea/
+
+# Python files
+*.pyc
+env/
+settings.py
+migrations/
+*.sqlite3
+.env
