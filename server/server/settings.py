@@ -145,7 +145,7 @@ if USE_S3:
     AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
     # s3 staticfiles settings
     AWS_LOCATION = 'static'
-    STATIC_URL = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
+    STATIC_URL = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/static/'
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 else:
