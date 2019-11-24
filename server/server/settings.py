@@ -25,7 +25,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gmaron.computerengineering.me', 'localhost']
 
 
 # Application definition
@@ -129,10 +129,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-
-MEDIA_URL = '/mediafiles/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
-
 USE_S3 = os.getenv('USE_S3') == 'TRUE'
 
 if USE_S3:
@@ -145,14 +141,14 @@ if USE_S3:
     AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
     # s3 staticfiles settings
     AWS_LOCATION = 'static'
-    STATIC_URL = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/static/'
+    STATIC_URL = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/{AWS_LOCATION}'
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 else:
     STATIC_URL = '/staticfiles/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles'),)
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/mediafiles/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
-
