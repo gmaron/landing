@@ -5,7 +5,7 @@
 # Python files
 *.pyc
 env/
-settings.py
 migrations/
 *.sqlite3
 .env
+__pycache__/
