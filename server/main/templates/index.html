@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {% load staticfiles %}
+  {% load static %}
 
 
   <meta charset="utf-8">
@@ -13,10 +13,10 @@
   <title>Gaston Maron</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="{% staticfiles "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+  <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="{% staticfiles "vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet" type="text/css">
+  <link href="{% static "vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -24,10 +24,10 @@
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
   
- <link rel="shortcut icon" type="image/png" href="{% staticfiles "img/favicon.png" %}"/>
+ <link rel="shortcut icon" type="image/png" href="{% static "img/favicon.png" %}"/>
 
   <!-- Custom styles for this template -->
-  <link href="{% staticfiles "css/agency.css" %}" rel="stylesheet">
+  <link href="{% static "css/agency.css" %}" rel="stylesheet">
 
 </head>
 
@@ -134,7 +134,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="{% staticfiles "img/about/1.jpg" %}"alt="">
+                <img class="rounded-circle img-fluid" src="{% static "img/about/1.jpg" %}"alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -148,7 +148,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="{% staticfiles "img/about/2.png" %}" alt="">
+                <img class="rounded-circle img-fluid" src="{% static "img/about/2.png" %}" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -162,7 +162,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="{% staticfiles "img/about/3.jpeg" %}" alt="">
+                <img class="rounded-circle img-fluid" src="{% static "img/about/3.jpeg" %}" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -176,7 +176,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="{% staticfiles "img/about/4.png" %}" alt="">
+                <img class="rounded-circle img-fluid" src="{% static "img/about/4.png" %}" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -190,7 +190,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="{% staticfiles "img/about/5.jpg" %}" alt="">
+                <img class="rounded-circle img-fluid" src="{% static "img/about/5.jpg" %}" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -308,18 +308,18 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{% staticfiles "vendor/jquery/jquery.min.js" %}"></script>
-  <script src="{% staticfiles "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+  <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+  <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="{% staticfiles "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+  <script src="{% static "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
 
   <!-- Contact form JavaScript -->
-  <script src="{% staticfiles "js/jqBootstrapValidation.js" %}"></script>
-  <script src="{% staticfiles "js/contact_me.js" %}"></script>
+  <script src="{% static "js/jqBootstrapValidation.js" %}"></script>
+  <script src="{% static "js/contact_me.js" %}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="{% staticfiles "js/agency.min.js" %}"></script>
+  <script src="{% static "js/agency.min.js" %}"></script>
 
   <script>
     $(window).on("blur focus", function(e) {
